@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Metamorphous&display=swap");
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+footer {
+  color: white;
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: x-small;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.homeContent {
+  background-image: url(images/portrait.jpg);
+  background-position: 80% 0%;
+}
+
+.aboutContent {
+  align-items: start;
+  padding: 100px;
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(images/roof.jpg);
+  background-position: center;
+}
+
+.newsContent {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url(images/instruments.jpg);
+  background-position: bottom;
+}
+
+.contactContent {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url(images/outdoors.jpg);
+  background-position: bottom;
+  background-attachment: scroll;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+nav ol {
+  display: flex;
+  padding-inline-start: 100px;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav ol li {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+  color: dimgray;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+  color: black;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.videosIntro {
+  margin: 50px;
+  max-width: 1200px;
+  text-align: left;
+}
+
+.videosContainer {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.linkButton {
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.linkButton:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.homeTitle {
+  padding: 200px 200px;
+  background-image: radial-gradient(rgba(85, 36, 28, 0.3), transparent 70%);
+}
+
+.homeContainer {
+  margin: 20px;
+}
+
+.newAlbum {
+  width: 400px;
+  height: 400px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  margin-bottom: 100px;
+}
+
+.contactData {
+  margin: 50px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.aboutSection {
+  margin: 5px;
+  max-width: 600px;
+  text-align: left;
+}

@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Feather and Fox</title>
+</head>
+
+<body>
+    <header>
+        <h1>Feather and Fox</h1>
+        <nav>
+            <ol>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+    <div id="content" class="content homeContent">
+        <div class="homeTitle">
+            <h1>Feather and Fox</h1>
+            <p>Cello and Mandolin Balfolk Duo</p>
+            <p>from Berlin and Brussels.</p>
+        </div>
+        <div class="homeContainer">
+            <h3>New Album !</h3>
+            <div class="newAlbum">New Album's Picture</div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>COPYRIGHT © 2025 Feather and Fox.</p>
+            <p>All Rights Reserved.</p>
+        </div>
+        <div style="padding: 1em; font-size: medium;">
+            <a href="https://www.facebook.com/featherandfoxduo/" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/@FeatherandFox" class="fa fa-youtube"></a>
+            <a href="mailto:featherandfoxduo@gmail.com" class="fa fa-envelope"></a>
+        </div>
+    </footer>
+
+    <script>
+        const content = document.getElementById("content");
+        window.addEventListener('scroll', () => {
+            const y = window.scrollY;
+            const newOpacity = y / (window.innerHeight);
+            content.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, ${newOpacity}), rgba(0, 0, 0, ${newOpacity})), url(images/portrait.jpg)`;
+        })
+    </script>
+</body>
+
+</html>

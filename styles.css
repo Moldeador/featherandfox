@@ -187,3 +187,33 @@ nav a.active {
   max-width: 600px;
   text-align: left;
 }
+
+
+
+
+
+/* sunil ideas */
+
+@media only screen and (max-width: 700px) {
+  header {
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  nav ol {
+    padding-left: 0;
+  }
+
+  .homeTitle {
+    padding: 100px 100px;
+  }
+
+  .videosContainer iframe {
+    width: 450px;
+  }
+}

@@ -8,27 +8,40 @@
 
 <body>
     <header>
-        <h1>Feather and Fox</h1>
+        <a href="index.html"><img src="images/logo.svg" width="150" /></a>
         <nav>
             <ol>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="agenda.html">AGENDA</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ol>
         </nav>
+        <div>
+            <a href="https://www.facebook.com/featherandfoxduo/" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/@FeatherandFox" class="fa fa-youtube"></a>
+            <a href="mailto:featherandfoxduo@gmail.com" class="fa fa-envelope"></a>
+        </div>
     </header>
     <div id="content" class="content homeContent">
         <div class="homeTitle">
-            <h1>Feather and Fox</h1>
-            <p>Cello and Mandolin Balfolk Duo</p>
-            <p>from Berlin and Brussels.</p>
+            <img src="images/logo.svg" width="500" class="whiteFilter" />
+
         </div>
-        <div class="homeContainer">
-            <h3>New Album !</h3>
-            <div class="newAlbum">New Album's Picture</div>
-        </div>
+        <!-- <div class="homeContainer">
+            <p>New Album!!</p>
+            <p>A Winter Morning</p>
+            <img src="images/album_a_winter_morning_cover.jpg" class="newAlbum">
+
+        </div> -->
+    </div>
+    <div class="content homeBottom">
+        <p>Cello and Mandolin Balfolk Duo</p>
+        <p>from Berlin and Brussels.</p>
+        <img src="images/album_a_winter_morning_cover.jpg" class="newAlbum">
+    </div>
+    <div class="content homeEpilogue">
+
     </div>
     <footer>
         <div>
@@ -36,20 +49,18 @@
             <p>All Rights Reserved.</p>
         </div>
         <div style="padding: 1em; font-size: medium;">
-            <a href="https://www.facebook.com/featherandfoxduo/" class="fa fa-facebook"></a>
-            <a href="https://www.youtube.com/@FeatherandFox" class="fa fa-youtube"></a>
-            <a href="mailto:featherandfoxduo@gmail.com" class="fa fa-envelope"></a>
+            <p>Fotograph by:</p>
         </div>
     </footer>
 
-    <script>
+    <!-- <script>
         const content = document.getElementById("content");
         window.addEventListener('scroll', () => {
             const y = window.scrollY;
-            const newOpacity = y / (window.innerHeight);
+            const newOpacity = Math.min(0.7, y / window.innerHeight);
             content.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, ${newOpacity}), rgba(0, 0, 0, ${newOpacity})), url(images/portrait.jpg)`;
         })
-    </script>
+    </script> -->
 </body>
 
 </html>

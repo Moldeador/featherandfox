@@ -29,7 +29,7 @@ footer {
   align-items: center;
   padding-left: 2em;
   padding-right: 2em;
-  font-size: x-small;
+  font-size: xx-small;
 }
 
 .content {
@@ -42,63 +42,131 @@ footer {
   text-align: center;
 }
 
-.homeContent {
+.homeTop {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  text-align: center;
   background-image: url(images/portrait.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   background-position: 50% 0%;
-  min-height: 95vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+  min-height: calc(100vh - 70px);
+}
+
+.homeMiddle {
+  color: white;
+  background-color: black;
+  text-align: center;
+  background-image: linear-gradient(rgb(23, 119, 203), rgb(213, 129, 3)),
+    url(images/instruments.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .homeBottom {
   color: white;
-  background-color: black;
   text-align: center;
-}
-
-.homeEpilogue {
-  background-image: url(images/instruments.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url(images/choregraphie-0130.jpeg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  background-position: 50% 100%;
-  min-height: 50vh;
+  background-position: 50% 50%;
+  /* min-height: 95vh; */
 }
 
-.homeBottom img {
-  margin: 50px;
+.hombeBottomBanner {
+  padding: 20px 0;
+  width: 100%;
+  background-color: #2a8bae6e;
 }
 
-.bioContent {
+.newAlbumContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0px;
+}
+
+.newAlbumContainer > img {
+  max-width: 60%;
+  margin: 40px 0px;
+  box-shadow: 20px 19px 20px 0px #00000090;
+}
+
+.newAlbumDescription {
+  max-width: 80%;
+}
+
+.aboutTop {
   background-image: url(images/roof.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   background-position: 50% 50%;
-  min-height: 70vh;
+  min-height: 90vh;
+}
+
+.aboutBottom {
+  padding: 50px;
+  flex-grow: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-
-.aboutFrame {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   color: white;
-  background-color: black;
   text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+    url(images/choregraphie-0130.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.aboutContent {
-  background-image: url(images/roof.jpg);
+.aboutBottom > div {
+  max-width: 500px;
+  text-align: left;
+  padding: 50px;
+}
+
+.agendaTop {
+  background-image: url(images/recording.jpg);
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: contain;
-  background-color: #2a8bae74;
-  align-items: start;
-  color: black;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: 50% 40%;
+  min-height: 90vh;
+}
+
+.agendaBottom {
+  padding: 50px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+    url(images/choregraphie-0130.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .newsContent {
@@ -206,34 +274,13 @@ nav a.active {
   color: black;
 }
 
-.newAlbum {
-  width: 50vh;
-  margin: 10px;
-}
-
 .contactData {
   margin: 50px;
   max-width: 1200px;
   text-align: center;
 }
 
-.aboutSection {
-  padding: 10px;
-  margin: 0px 60px;
-  border: 1px solid black;
-  width: 600px;
-  background-color: white;
-}
-
-.aboutPortraitContainer {
-  display: flex;
-  text-align: left;
-  align-items: center;
-  justify-content: space-around;
-  gap: 100px;
-}
-
-.yellowLightFilter {
+.yellowFilter {
   filter: invert(87%) sepia(11%) saturate(461%) hue-rotate(23deg)
     brightness(109%) contrast(104%);
 }
@@ -254,7 +301,15 @@ nav a.active {
 }
 
 /* sunil ideas */
-
+@media only screen and (max-width: 800px) and (min-width: 701px) {
+  header {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  a.fa {
+    padding: 4px;
+  }
+}
 @media only screen and (max-width: 700px) {
   header {
     display: block;

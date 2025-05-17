@@ -95,14 +95,14 @@
     </div>
     <script>
         const photoModal = document.getElementById("photoModal");
-        photoModal.addEventListener("pointerdown", () => {
+        photoModal.addEventListener("click", () => {
             photoModal.style.display = "none";
         })
         const photoOnDisplay = photoModal.querySelector("div");
         const photos = document.querySelectorAll("#photosContainer img");
         for (let i = 0; i < photos.length; i++) {
             const photo = photos[i];
-            photo.addEventListener("pointerdown", () => {
+            photo.addEventListener("click", () => {
                 photoModal.style.display = "flex";
                 photoOnDisplay.style.backgroundImage = `url(${photo.src})`;
             })

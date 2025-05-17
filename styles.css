@@ -259,6 +259,8 @@ footer {
 .videosContainer iframe {
   box-shadow: 20px 19px 20px 0px #00000090;
   border-radius: 5px;
+  max-width: 80vw;
+  max-height: 45vw;
 }
 
 #photosContainer {

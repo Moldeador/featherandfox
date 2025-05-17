@@ -120,7 +120,7 @@ footer {
   align-items: center;
   color: white;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
     url(images/choregraphie-0152.jpeg);
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -227,12 +227,78 @@ footer {
   display: none;
 }
 
-.mediaContent {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-    url(images/background.jpg);
+.mediaBottom {
+  padding: 30px 0px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(images/choregraphie-0199.jpeg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
+  background-position: 50% 50%;
+}
+
+.videosContainer {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.videosContainer iframe {
+  box-shadow: 20px 19px 20px 0px #00000090;
+  border-radius: 5px;
+}
+
+#photosContainer {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+#photosContainer img {
+  max-height: 315px;
+  max-width: 80vw;
+  cursor: pointer;
+  box-shadow: 20px 19px 20px 0px #00000090;
+  border-radius: 5px;
+}
+
+#photoModal {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  cursor: pointer;
+}
+
+#photoModal > div {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contactContent {
@@ -264,7 +330,6 @@ nav ol {
 
 nav ol li {
   display: inline-block;
-  padding: 0.5em;
 }
 
 /* Style the links inside the navigation bar */
@@ -272,11 +337,11 @@ nav a {
   color: dimgray;
   text-decoration: none;
   font-size: 17px;
+  padding: 1em 0.5em;
 }
 
 /* Change the color of links on hover */
 nav a:hover {
-  background-color: white;
   color: black;
 }
 
@@ -298,23 +363,6 @@ nav a.active {
 /* Add a hover effect if you want */
 .fa:hover {
   color: black;
-}
-
-.videosIntro {
-  margin: 50px;
-  max-width: 1200px;
-  text-align: left;
-}
-
-.videosContainer {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
 }
 
 .linkButton {
@@ -376,6 +424,16 @@ nav a.active {
 
   nav ol {
     padding-left: 0;
+  }
+
+  .videosContainer {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #photosContainer {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .videosContainer iframe {

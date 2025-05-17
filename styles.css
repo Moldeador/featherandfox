@@ -19,6 +19,8 @@ header {
   align-items: center;
   padding-left: 4em;
   padding-right: 2em;
+  box-shadow: 0px 1px 6px 0px #00000020;
+  position: relative;
 }
 
 footer {
@@ -86,8 +88,7 @@ footer {
   /* min-height: 95vh; */
 }
 
-.hombeBottomBanner {
-  padding: 20px 0;
+.bottomBanner {
   width: 100%;
   background-color: #2a8bae6e;
 }
@@ -103,79 +104,127 @@ footer {
   max-width: 60%;
   margin: 40px 0px;
   box-shadow: 20px 19px 20px 0px #00000090;
+  border-radius: 5px;
 }
 
 .newAlbumDescription {
   max-width: 80%;
 }
 
-.aboutTop {
-  background-image: url(images/roof.jpg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: 50% 50%;
-  min-height: 90vh;
-}
-
 .aboutBottom {
-  padding: 50px;
+  padding: 30px 0px;
   flex-grow: 1;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   color: white;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-    url(images/choregraphie-0130.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url(images/choregraphie-0152.jpeg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.aboutBottom > div {
-  max-width: 500px;
-  text-align: left;
-  padding: 50px;
+.aboutBottom img {
+  max-width: 70%;
+  box-shadow: 20px 19px 20px 0px #00000090;
+  border-radius: 5px;
+  margin: 30px;
 }
 
-.agendaTop {
-  background-image: url(images/recording.jpg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: 50% 40%;
-  min-height: 90vh;
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutContainer > div {
+  max-width: 500px;
+  text-align: left;
+  margin: 30px;
 }
 
 .agendaBottom {
-  padding: 50px;
+  padding: 30px 0px;
   flex-grow: 1;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   color: white;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-    url(images/choregraphie-0130.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(images/choregraphie-0185.jpeg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.newsContent {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-    url(images/instruments.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom;
+.agendaBottom img {
+  max-width: 70%;
+  box-shadow: 20px 19px 20px 0px #00000090;
+  border-radius: 5px;
+  margin: 30px;
+}
+
+.agendaContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: self-start;
+}
+
+.agendaContainer > div {
+  max-width: 600px;
+  text-align: left;
+  margin: 30px;
+}
+
+.agendaContainer > div > div {
+  margin-bottom: 60px;
+}
+
+.agendaContainer li {
+  line-height: 1.8em;
+}
+
+.agendaContainer li a {
+  text-decoration: none;
+  color: orange;
+}
+
+.agendaContainer button {
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+.agendaContainer button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+#pastDates {
+  display: none;
+}
+
+#hidePastDatesButton {
+  display: none;
 }
 
 .mediaContent {
@@ -187,7 +236,14 @@ footer {
 }
 
 .contactContent {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
     url(images/outdoors.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;

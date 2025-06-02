@@ -111,8 +111,23 @@ footer {
   max-width: 80%;
 }
 
+.aboutTop {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-image: url(images/roof.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: min(calc(100vh - 200px), 100vw);
+}
+
 .aboutBottom {
-  padding: 30px 0px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -120,10 +135,10 @@ footer {
   align-items: center;
   color: white;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url(images/choregraphie-0152.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/roof.jpg);
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
 }

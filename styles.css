@@ -164,8 +164,23 @@ footer {
   margin: 30px;
 }
 
+.agendaTop {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-image: url(images/recording.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: min(calc(100vh - 200px), 100vw);
+}
+
 .agendaBottom {
-  padding: 30px 0px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -173,19 +188,12 @@ footer {
   align-items: center;
   color: white;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url(images/choregraphie-0185.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/recording.jpg);
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
-}
-
-.agendaBottom img {
-  max-width: 70%;
-  box-shadow: 20px 19px 20px 0px #00000090;
-  border-radius: 5px;
-  margin: 30px;
 }
 
 .agendaContainer {

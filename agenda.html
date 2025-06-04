@@ -38,22 +38,23 @@
                 <div>
                     <h1>Tour Dates</h1>
                     <ul>
-                        <li>31.05.2025 - Diest (BE), <a href="https://dafodil.be/">Dafodil Festival</a></li>
                         <li>05.06.2025 - Bologna (IT), <a
                                 href="https://www.renofolkfestival.it/en/rff-home-english/">Reno Folk Festival</a></li>
+                        <li>15.06.2025 - Halle (DE)</li>
                         <li>20 + 21.06.2025 - Mattstedt (DE), <a href="https://de.muehlenhofmattstedt.de/folk">Mattstedt
                                 Folk Weekend</a></li>
                         <li>24.07.2025 - Hamburg (DE), <a
                                 href="https://www.emtc2025.de/programme/social-events.html">13th European Music Therapy
                                 Conference</a></li>
                         <li>26.09.2025 - Hamburg (DE), <a href="https://nordfolkfestival.de">Nord Folk Festival</a></li>
+                        <li>02.11.2025 - Delmenhorst (DE)</li>
                         <li>20.11.2025 - Hingene (BE), <a
                                 href="https://www.kasteeldursel.be/bezoek/winterdans-2025.html">Winterdans @ Kasteel
                                 d&#39;Ursel</a></li>
                     </ul>
                 </div>
 
-                <div id="showPastDatesButton"  style="text-align: center;">
+                <div id="showPastDatesButton" style="text-align: center;">
                     <button onclick="showPastDates()">See Past Dates</button>
                 </div>
 
@@ -65,6 +66,7 @@
                     <h1>Past Dates</h1>
                     <h2>2025</h2>
                     <ul>
+                        <li>31.05.2025 - Diest (BE), Dafodil Festival</li>
                         <li>27.04.2025 - Paris (FR), Paris Bal Folk</li>
                         <li>25.04.2025 - 's-Hertogenbosch (NL), Drakenbal</li>
                         <li>19.04.2025 - Boutersem (BE), ComSiBal Festival</li>
@@ -116,39 +118,34 @@
     </div>
 
 
-
-
-
-
-
     <footer>
         <div>
             <p>COPYRIGHT &copy; 2025 Feather and Fox.</p>
             <p>All Rights Reserved.</p>
         </div>
         <div style="text-align: right;">
-            <p>Photo by: </p>
+            <p>Photo: Simon Dumpleton</p>
             <p>Web design: Santiago Cabrera</p>
         </div>
     </footer>
 
-<script>
-    const pastDates = document.getElementById("pastDates");
-    const hideButton = document.getElementById("hidePastDatesButton");
-    const showButton = document.getElementById("showPastDatesButton");
+    <script>
+        const pastDates = document.getElementById("pastDates");
+        const hideButton = document.getElementById("hidePastDatesButton");
+        const showButton = document.getElementById("showPastDatesButton");
 
-    const showPastDates = function(){
-        pastDates.style.display = "block";
-        hideButton.style.display = "block";
-        showButton.style.display = "none";
-    }
-    const hidePastDates = function(){
-        pastDates.style.display = "none";
-        hideButton.style.display = "none";
-        showButton.style.display = "block";
-    }
+        const showPastDates = function () {
+            pastDates.style.display = "block";
+            hideButton.style.display = "block";
+            showButton.style.display = "none";
+        }
+        const hidePastDates = function () {
+            pastDates.style.display = "none";
+            hideButton.style.display = "none";
+            showButton.style.display = "block";
+        }
 
-</script>
+    </script>
 </body>
 
 </html>

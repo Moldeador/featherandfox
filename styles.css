@@ -1,4 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Metamorphous&display=swap");
+@font-face {
+  font-family: BreveText;
+  src: url("fonts/BreveTextLight.otf");
+}
+
+@font-face {
+  font-family: BreveTitle;
+  src: url("fonts/BreveSlabTitleBold.otf");
+}
+
+@font-face {
+  font-family: BreveSlabItalic;
+  src: url("fonts/BreveSlabTitleBookItalic.otf");
+}
+
+@font-face {
+  font-family: BreveNews;
+  src: url("fonts/BreveNewsBook.otf");
+}
 
 body {
   height: 100vh;
@@ -7,9 +25,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: "Metamorphous", serif;
-  font-weight: 400;
+  font-family: BreveText, serif;
   font-style: normal;
+  font-size: large;
+}
+
+h1,
+h2 {
+  font-family: BreveTitle, serif;
 }
 
 header {
@@ -31,7 +54,8 @@ footer {
   align-items: center;
   padding-left: 2em;
   padding-right: 2em;
-  font-size: xx-small;
+  font-size: small;
+  line-height: 0.7em;
 }
 
 .content {
@@ -54,37 +78,26 @@ footer {
   text-align: center;
   background-image: url(images/portrait.jpg);
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   background-position: 50% 0%;
   min-height: min(calc(100vh - 70px), 100vw);
 }
 
-.homeMiddle {
-  color: white;
-  background-color: black;
-  text-align: center;
-  background-image: linear-gradient(rgb(23, 119, 203), rgb(213, 129, 3)),
-    url(images/instruments.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom;
-}
-
 .homeBottom {
+  flex-grow: 1;
   color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
-    url(images/choregraphie-0130.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/room_playing.jpg);
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   /* min-height: 95vh; */
 }
 
@@ -97,7 +110,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 60px 0px;
 }
 
 .newAlbumContainer > img {
@@ -112,20 +124,22 @@ footer {
 }
 
 .aboutBottom {
-  padding: 30px 0px;
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   color: white;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url(images/choregraphie-0152.jpeg);
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(images/roof.jpg);
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 100% 50%;
 }
 
 .aboutBottom img {
@@ -136,11 +150,7 @@ footer {
 }
 
 .aboutContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  margin-left: 4em;
 }
 
 .aboutContainer > div {
@@ -150,7 +160,6 @@ footer {
 }
 
 .agendaBottom {
-  padding: 30px 0px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -158,19 +167,12 @@ footer {
   align-items: center;
   color: white;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url(images/choregraphie-0185.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url(images/recording.jpg);
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
-}
-
-.agendaBottom img {
-  max-width: 70%;
-  box-shadow: 20px 19px 20px 0px #00000090;
-  border-radius: 5px;
-  margin: 30px;
 }
 
 .agendaContainer {
@@ -183,7 +185,7 @@ footer {
 }
 
 .agendaContainer > div {
-  max-width: 600px;
+  width: 600px;
   text-align: left;
   margin: 30px;
 }
@@ -197,6 +199,11 @@ footer {
 }
 
 .agendaContainer li a {
+  text-decoration: none;
+  color: orange;
+}
+
+.newAlbumContainer a {
   text-decoration: none;
   color: orange;
 }
@@ -228,21 +235,24 @@ footer {
 }
 
 .mediaBottom {
-  padding: 30px 0px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap: 100px;
   color: white;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url(images/choregraphie-0199.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url(images/instruments.jpg);
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.mediaBottom > div {
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 .videosContainer {
@@ -311,7 +321,7 @@ footer {
   align-items: center;
   color: white;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
     url(images/outdoors.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -338,7 +348,8 @@ nav ol li {
 nav a {
   color: dimgray;
   text-decoration: none;
-  font-size: 17px;
+  font-family: BreveNews;
+  font-size: 20px;
   padding: 1em 0.5em;
 }
 
@@ -386,27 +397,13 @@ nav a.active {
   text-align: center;
 }
 
-.yellowFilter {
-  filter: invert(87%) sepia(11%) saturate(461%) hue-rotate(23deg)
-    brightness(109%) contrast(104%);
-}
-
-.orangeFilter {
-  filter: invert(64%) sepia(79%) saturate(1315%) hue-rotate(340deg)
-    brightness(89%) contrast(96%);
-}
-
-.blueFilter {
-  filter: invert(41%) sepia(98%) saturate(360%) hue-rotate(150deg)
-    brightness(96%) contrast(88%);
-}
-
-.whiteFilter {
-  filter: invert(94%) sepia(100%) saturate(24%) hue-rotate(349deg)
-    brightness(104%) contrast(108%);
-}
-
 /* sunil ideas */
+@media only screen and (min-width: 1900px) {
+  .aboutContainer {
+    margin-left: 20em;
+  }
+}
+
 @media only screen and (max-width: 800px) and (min-width: 701px) {
   header {
     padding-left: 1em;
@@ -428,6 +425,16 @@ nav a.active {
     padding-left: 0;
   }
 
+  nav a {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: xx-small;
+  }
+  .aboutContainer {
+    margin-left: 1em;
+  }
   .videosContainer {
     margin-left: 0px;
     margin-right: 0px;
@@ -436,6 +443,10 @@ nav a.active {
   #photosContainer {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  #photoModal {
+    padding: 10px;
   }
 
   .videosContainer iframe {

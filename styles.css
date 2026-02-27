@@ -112,7 +112,7 @@ footer {
   align-items: center;
 }
 
-.newAlbumContainer > img {
+.newAlbumContainer img {
   max-width: 60%;
   margin: 40px 0px;
   box-shadow: 20px 19px 20px 0px #00000090;
@@ -462,4 +462,5 @@ nav a.active {
     width: 450px;
   }
 }
+
 

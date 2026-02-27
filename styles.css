@@ -112,11 +112,22 @@ footer {
   align-items: center;
 }
 
-.newAlbumContainer > img {
+.albumLinkImgContainer {
+  position: relative;
+}
+
+.albumLinkImgContainer img {
   max-width: 60%;
   margin: 40px 0px;
   box-shadow: 20px 19px 20px 0px #00000090;
   border-radius: 5px;
+}
+
+.albumLinkImgContainer a {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  font-size: 0;
 }
 
 .newAlbumDescription {
@@ -462,4 +473,5 @@ nav a.active {
     width: 450px;
   }
 }
+
 
